@@ -1,0 +1,159 @@
+/* Global styles (good contrast, Module 7) */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #111;
+}
+
+/* Brand */
+.brand-logo {
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brand-svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Hero */
+.hero-section {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #ffffff, #e9edf3);
+}
+
+.hero-title {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #b1976b;
+}
+
+.hero-main {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-sub {
+  color: #6c757d;
+  max-width: 32rem;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+/* Product cards */
+.product-card {
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.product-img {
+  border-radius: 0;
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.product-price {
+  color: #b1976b;
+  font-weight: 600;
+}
+
+/* About section */
+.about-section {
+  padding: 3rem 0;
+  background-color: #ffffff;
+}
+
+.about-section h2 {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #b1976b;
+  margin-bottom: 0.75rem;
+}
+
+/* Table styling (Module 4) */
+.size-table thead {
+  background-color: #111;
+  color: #f8f9fa;
+}
+
+.size-table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* Video */
+.video-section {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.video-wrapper iframe {
+  border-radius: 0.5rem;
+}
+
+/* Newsletter (HTML5 input + JS, Module 9) */
+.newsletter-section {
+  padding: 3rem 0;
+  background-color: #f4f2ee;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-section.highlighted {
+  background-color: #e8f7ec;
+}
+
+.newsletter-section h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  color: #b1976b;
+}
+
+.newsletter-section .form-control,
+.newsletter-section .btn {
+  border-radius: 0;
+}
+
+#newsletter-message {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0 1.2rem;
+  background-color: #111;
+  color: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Small tweaks for very narrow screens */
+@media (max-width: 575px) {
+  .hero-main {
+    font-size: 1.8rem;
+  }
+}
